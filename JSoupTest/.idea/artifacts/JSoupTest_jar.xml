@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JSoupTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSoupTest_jar</output-path>
+    <root id="archive" name="JSoupTest.jar">
+      <element id="module-output" name="JSoupTest" />
+      <element id="extracted-dir" path="C:/Libraries/JSoup/jsoup-1.11.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
