@@ -8,6 +8,7 @@ public class Book extends Publication {
     //poles
     private String author;
     private int pages;
+    private int releaseYear;
     private String isbn;
 
     //setters and getters
@@ -37,6 +38,13 @@ public class Book extends Publication {
         this.pages = pages;
     }
 
+    public int getReleaseYear(){
+        return releaseYear;
+    }
+    public void setReleaseYear(int releaseYear){
+        this.releaseYear = releaseYear;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(32);
@@ -44,7 +52,7 @@ public class Book extends Publication {
         sb.append("; ");
         sb.append(getAuthor());
         sb.append("; ");
-        sb.append(getYear());
+        sb.append(getReleaseYear());
         sb.append("; ");
         sb.append(getPages());
         sb.append("; ");
@@ -77,6 +85,7 @@ public class Book extends Publication {
         super(releaseDate, title, publisher); //wywołanie konstruktora z Publication.class
         this.setAuthor(author);
         this.setPages(pages);
+        this.setReleaseYear(releaseDate);
         this.setIsbn(isbn);
     }
 

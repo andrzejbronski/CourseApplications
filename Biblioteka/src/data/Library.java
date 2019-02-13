@@ -89,8 +89,8 @@ public void addUser(LibraryUser user){
             if (o2 == null) {
                 return -1;
             }
-            Integer i1 = o1.getReleaseYear();
-            Integer i2 = o2.getReleaseYear();
+            Integer i1 = o1.getYear();
+            Integer i2 = o2.getYear();
             return -i1.compareTo(i2);
         }
     }
